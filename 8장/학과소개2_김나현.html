@@ -8,6 +8,41 @@
 
         <link rel="stylesheet" type="text/css" href="layout.css">
 
+        <style>
+            article {
+                /*background-color: aqua;*/
+                width: 95%;
+                margin-left: auto;
+                margin-right: auto;
+                /*padding: left 20px;
+                padding-bottom: 20px;*/
+                margin: 20px 0px 20px 0px;
+                padding: 20px;
+            }
+
+            #com1 {
+                border: 2px solid black; /* solid 기본적으로 사용하는 둥글게 테두리리*/
+                border-radius: 10px; 
+            }
+
+            #com2 {
+                border: 5px dotted green; /* dotted 점 테두리 */
+                border-radius: 20px;
+            }
+
+            #com3 {
+                border: 3px double orange; /* double 더블 테두리 */
+                border-top-left-radius: 30px; /* 왼쪽 위에 둥글게 */
+                border-bottom-right-radius: 30px; /* 오른쪽 아래 둥글게*/
+            }
+
+            .red_point {
+                color: red; 
+                font-weight: bold; /* 글자 굵게*/
+            }
+
+        </style>
+
     </head>
     <body>
         <!-- 로고, 메뉴 영역 -->
@@ -16,10 +51,10 @@
             <!-- 메뉴 -->
             <nav>
                 <ul>
-                    <li><a href="">학부 소개</a></li>
-                    <li><a href="">컴퓨터공학전공</a></li>
-                    <li><a href="">메타버스전공</a></li>
-                    <li><a href="">교육 목표</a></li>
+                    <li><a href="#com1">학부 소개</a></li>
+                    <li><a href="#com2">컴퓨터공학전공</a></li>
+                    <li><a href="#com3">메타버스전공</a></li>
+                    <li><a href="#com4">교육 목표</a></li>
                 </ul>
             </nav>
         </header>
@@ -27,7 +62,7 @@
         <!-- 학부 소개 메인 영역 -->
         <section>
             <!-- 학부 소개 콘텐츠 영역 -->
-            <article>
+            <article id="com1">
                 <h2>학부 소개</h2>
                 <p>
                     본 학부는 소프트웨어 개발 인재 양성을 목표로 1988년 전자계산학과로 출발하여 
@@ -41,7 +76,7 @@
             </article>
 
             <!-- 컴퓨터공학전공 소개 콘텐츠 영역 -->
-            <article>
+            <article id="com2">
                 <h2>컴퓨터전공</h2>
                 <h3>소개</h3>
                     <p>
@@ -60,7 +95,7 @@
             </article>
 
             <!-- 메타버스전공 소개 콘텐츠 영역 -->
-            <article>
+            <article id="com3">
                 <h2>메타버스전공</h2>
                 <h3>소개</h3>
                     <p>
@@ -79,7 +114,7 @@
             </article>
 
             <!-- 교육목표 소개 콘텐츠 영역 -->
-            <article>
+            <article id="com4">
                 <h2>교육 목표</h2>
                 <p>
                     <ul>
