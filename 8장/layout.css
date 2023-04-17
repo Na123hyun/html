@@ -24,14 +24,14 @@ h1 { /* 글자 크기 적용 */
 /* header 의 자손인  h1 태그에 적용 */
 header h1 {
     color: white; /* 글자 색 정하기 */
-    width: 40%; /* 넓이 */
+    width: 30%; /* 넓이 */
     float: left; /* 왼쪽 정렬 */
 }
 
 /* header 의 자식인 nav 태그에 적용 */
 header > nav {
     /*background-color: tomato;*/
-    width: 60%; /* 넓이 */
+    width: 70%; /* 넓이 */
     float: right; /* 오른쪽 정렬 */
 }
 
