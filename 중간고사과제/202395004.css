@@ -1,3 +1,97 @@
 /*body {
     background-color: aqua;
 } */
+
+dt {
+    font-size: 1.1em; /* 글자 크기*/
+    font-weight: bold; /* 글자 굵게 */
+    color: rgb(47,170,219);
+}
+
+h1 {
+    
+    font-size: 35px; /* 글자 사이즈 */
+    text-align: center; /* 가운데 정렬 */
+}
+
+header p {
+    font-size: 20px;
+    font-weight: bold; /* 글자 굵게 */
+    color: grey; /* 색상 정하기 */
+    text-align: center; /* 가운데 정렬 */
+}
+
+nav {
+    color: white;
+    background-color: black;
+    padding: 20px;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none; /* 하이퍼링크 밑줄 제거 */
+    font-weight: bold;
+    width: 100px; /* 너비 */
+    color: white;
+    display: inline-block; /* 가로로 배치 */
+}
+
+h2 {
+    margin: 10px; /* 바깥 쪽 여백 */
+    margin: 30px 0px 0px 0px; /* 위 쪽 여백 */
+    padding: 20px; /* 안 쪽 여백 */
+    border-style: solid;
+    border-width: 0px 0px 2px 10px; /* 테두리 위 오른쪽 아래 왼쪽 지정*/
+    border-color: fuchsia; /* 테두리 색상 정하기 */
+}
+
+h3 {
+    border-width: 0px 0px 0px 5px;
+    border-style: solid;
+    border-color: darkcyan; /* 테두리 색상 정하기 */
+    padding: 15px; /* 안 쪽 여백 */
+    background-color: rgba(0, 238, 255, 0.199);
+}
+
+h4 {
+    font-size: 1.1em; /* 글자 크기 */
+    margin: auto; /* 여백 */
+    line-height: 15px; /* 줄 간격*/
+}
+
+footer {
+    height: 80px; /* 높이 */
+    background-color: plum; /* 바탕 색상 정하기*/
+    font-size: 20px; /* 글자 크기 */
+    font-weight: bold; /* 글자 굵게 */
+    text-align: center;
+    padding: 1px;
+}
+
+article {
+    width: 80%; /* 가로 길이 */
+    margin: 30px; /* 바깥 쪽 여백 */
+}
+
+th {
+    font-size: 1.5em; /* 글자 크기 */
+    color: green; /* 색상 정하기 */
+    width: 15%; /* 바깥 쪽 여백 */
+    padding: 10px; /* 안 쪽 여백 */
+}
+
+td {
+    line-height: 30px; /* 줄 간격 */
+    padding: 10px; /* 안 쪽 여백 */
+}
+
+fieldset {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    list-style-type: none; /* 목록의 불릿 없애기 */
+}
+

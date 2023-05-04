@@ -9,7 +9,15 @@
         <link rel="stylesheet" type="text/css" href="202395004.css">
 
         <style>
+            img {
+                float: left; /* 이미지 왼쪽 정렬 */
+                width: 600px; /* 이미지 사이즈 */
+                height: 225px; /* 영역 높이 */
+            }
 
+            .centered {
+                text-align: center;
+            }
         </style>
     </head>
     <body>
@@ -17,11 +25,14 @@
             <div> <!-- 이미지 영역 -->
                 <img src="img/main.jpg">
             </div>
+            <br><br>
             <div> <!-- 제목 영역-->
                 <h1>지금도 그렇고 미래도 소프트웨어 세상입니다!</h1>
                 <p>4차 산업혁명을 선도할 소프트웨어 개발 인재를 양성합니다.</p>
             </div>
         </header>
+
+        <br><br>
 
         <nav>
             <a href="lntroduction.html">학과 소개</a>ㅣ 
@@ -41,6 +52,7 @@
                                 <label for="user_id" class="title">아이디</label>
                                 <input type="text" id="user_id" autofocus required>
                             </li>
+                            <br>
                             <li>
                                 <label for="user_pw" class="title">비밀번호</label>
                                 <input type="password" name="user_pw" id="user_pw" autofocus required>
@@ -56,11 +68,13 @@
                                 <label for="user_tel" class="title">전화번호</label>
                                 <input type="tel" id="user_tel" name="user_tel">
                             </li>
+                            <br>
                             <li>
                                 <label for="title">성별</label>
                                 <input type="radio" name="user_grade1" id="user_name" value="남자">남
-                                <input type="radio" name="user_grade2" id="user_name" value="여자">여
+                                <input type="radio" name="user_grade2" id="user_name" value="여자" checked>여
                             </li>
+                            <br>
                             <li>
                                 <label for="title">관심분야</label>
                                 <input type="checkbox" name="ck_c" id="ck_c" value="c">
@@ -77,7 +91,7 @@
                     
                     <br>
 
-                    <div>
+                    <div class="centered">
                         <input type="submit" value="가입하기">
                         <input type="reset" value="다시 작성">
                     </div>
