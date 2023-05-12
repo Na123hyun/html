@@ -1,0 +1,81 @@
+/* 문서 전체 글꼴은 맑은 고딕, 바깥 여백 5px*/
+
+* {
+    font-family: "맑은 고딕"; /* 폰트 지정 */
+    margin: 5px; /* 바깥 쪽 여백 */
+}
+
+header, footer {
+    padding: 20px; /* 안 쪽 여백 */
+    background-color: orange; /* 배경 색상 지정 */
+    text-align: center; /* 가운데 정렬 */
+}
+
+nav {
+    background-color: skyblue; /* 배경 색상 지정 */
+    text-align: center; /* 가운데 정렬 */
+    font-size: 18px; /* 글자 크기 */
+    padding: 20px; /* 안 쪽 여백 */
+    font-weight: bold; /* 글자 굵게 */
+}
+
+a {
+    text-decoration: none; /* 하이퍼링크 밑 줄 없애기 */
+    width: 100px; /* 가로 길이 */
+    height: 30px; /* 세로 길이 */
+    padding: 10px; /* 안 쪽 여백 */
+    /* background-color: red; */
+    display: inline-block; /* 디스플레이 인라인 블럭 지정 */
+}
+
+a:link, a:visited {
+    color: black;
+}
+
+a:hover, a:active {
+    color: white;
+    background-color: aqua;
+    text-decoration: underline;
+}
+
+section {
+    background-color: gray;
+    border: 3px solid pink;
+    width: 48%;
+    height: 200px;
+    float: left; 
+}
+
+/* footer clear 적용 */
+footer {
+    clear: both; 
+}
+
+.c1 {
+    color: white;
+    padding: 10px;
+}
+
+#s1 > h1 {
+    background-color: darkblue;
+}
+
+#s2 > h1 {
+    background-color: darkcyan;
+}
+
+#s3 > h1 {
+    background-color: darkturquoise;
+}
+
+#s4 > h1 {
+    background-color: deepskyblue;
+}
+
+#s5 > h1 {
+    background-color: dodgerblue;
+}
+
+#s6 > h1 {
+    background-color: darkseagreen;
+}
