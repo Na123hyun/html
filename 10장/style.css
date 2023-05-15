@@ -29,17 +29,17 @@ a {
 }
 
 a:link, a:visited {
-    color: black;
+    color: black; /* 색상 정하기 */
 }
 
 a:hover, a:active {
-    color: white;
-    background-color: aqua;
-    text-decoration: underline;
+    color: white; /* 색상 정하기 */
+    background-color: aqua; /* 배경 색상 지정 */
+    text-decoration: underline; 
 }
 
 section {
-    background-color: gray;
+    background-color: gray; /* 배경 색상 지정 */
     border: 3px solid pink;
     width: 48%;
     height: 200px;
