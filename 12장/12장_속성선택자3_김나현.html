@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>속성 선택자3 - 김나현</title>
+
+        <style>
+            ul {
+                list-style: none; /* 볼릿 없애기 */
+            }
+
+            li {
+                display: inline-block; /* 가로 길이 뿐만 아니라 세로 길이도 가능*/
+                width: 120px; /* 가로 길이 */
+                margin: 10px; /* 바깥 쪽 여백 */
+            }
+
+            li > a {
+                text-decoration: none; /* 밑줄 없애기 */
+                color: black; /* 색상 */
+                font-size: 14px; /* 사이즈 */
+                padding: 5px 20px; /* 안 쪽 여백 */
+            }
+
+            .flat {
+                background-color: blue;
+                color: white;
+            }
+
+            [class ~= "button"] {
+                border: 2px solid black;
+                box-shadow: rgba(0,0,0,0.4) 5px 5px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <ul>
+            <li><a href="#">메뉴 1</a></li>
+            <li><a href="#">메뉴 2</a></li>
+            <li><a href="#" class="button">메뉴 3</a></li>
+            <li><a href="#" class="flat button">메뉴 4</a></li>
+        </ul>
+    </body>
+</html>
