@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>속성 선택자6 - 김나현</title>
+
+        <style>
+            ul {
+                list-style: none; /* 볼릿 없애기 */
+            }
+
+            li {
+                display: inline-block; /* 가로 길이 뿐만 아니라 세로 길이도 가능*/
+                width: 120px; /* 가로 길이 */
+                margin: 10px; /* 바깥 쪽 여백 */
+            }
+
+            li > a {
+                text-decoration: none; /* 밑줄 없애기 */
+                color: black; /* 색상 */
+                font-size: 14px; /* 사이즈 */
+                padding: 5px 20px; /* 안 쪽 여백 */
+            }
+
+            a[href $= "hwp"] {
+                background: url(images/hwp_icon.gif) no-repeat left center; /* 이미지 넣기 */
+                padding: 5px 25px; /* 안 쪽 여백 */ 
+            }
+
+            a[href $= "xls"] {
+                background: url(images/excel_icon.gif) no-repeat left center;
+                padding: 5px 25px; /* 안 쪽 여백 */ 
+            }
+        </style>
+        
+
+    </head>
+    <body>
+        <ul>
+            <h2>학과 소개 파일 다운로드</h2>
+            <li><a href="intro.hwp">한글 파일</a></li>
+            <li><a href="intro.xls">엑셀 파일</a></li>
+        </ul>
+    </body>
+</html>
