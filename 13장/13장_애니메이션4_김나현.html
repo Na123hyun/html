@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>애니메이션 4 - 김나현</title>
+
+        <style>
+            
+            #box1 {
+                height: 50px; /* 세로 */
+                width: 50px;
+                margin-top: 50px;
+                margin-left: 100px; /*  바깥 */
+                padding: 20px; /* 안 쪽 */
+                background-color: aqua;
+                animation-name: rotate; /* 이름 */
+                animation-duration: 2s; /* 시간 */
+                animation-direction: normal; /* 애니메이션 방향 지정 */
+                animation-iteration-count: infinite; /* 애니메이션 반복 횟수 - 무한 */
+            }
+            
+            @keyframes rotate {
+                from {
+                    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+                    background-color: gold;
+                }
+
+                50% {
+                    transform: perspective(120px) rotateX(-180deg) rotateY(0); /*  중간 과정 */
+                    background-color: green;
+                }
+
+                to {
+                    transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+                    background-color: red;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box1"></div>
+    </body>
+</html>

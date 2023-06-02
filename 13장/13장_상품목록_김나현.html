@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>상품 목록 - 김나현</title>
+
+        <style>
+            ul {
+                list-style: none; /* 불릿 없애기 */
+                margin: 0px; /* 바깥쪽*/
+                padding: 0px; /* 안 쪽*/
+            }
+
+            li { /* 리스트 각각 */
+                position: relative;
+                float: left;
+                padding: 0px; /* 안 */
+                margin: 10px; /* 바깥 */
+                overflow: hidden;
+            }
+
+            li img {
+                margin: 0px; /* 바깥 */
+                padding: 0px; /* 안 */
+                float: left;
+                z-index: 5; /* 겹치는 위치 */
+            }
+
+            .caption {
+                position: absolute; /* 이미지 위로 */
+                top: 200px; /* 위쪽 */
+                width: 300px; /* 가로 */
+                height: 200px; /* 세로 */
+                padding-top: 20px; /* 안 쪽 여백의 위쪽 */
+                background-color: rgba(0,0,0,0.6); /* 배경 색상 */
+                opacity: 0; /* 투명도 */
+                transition: all 0.2s ease-in-out;
+                z-index: 10; /* 겹치는 위치 */
+                color: white; /* 색상 */
+                text-align: center; /* 가운데 정렬 */
+            }
+
+            li:hover .caption {
+                opacity: 1; /* 투명도 */
+                transform: translateY(-200px);
+
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <h1>신상품 목록</h1>
+        <div id="container">
+            <ul>
+                <li>
+                    <img src="images/prod1.jpg">
+                    <div class="caption">
+                        <h1>상품 1</h1>
+                        <p>상품 1 설명 텍스트</p>
+                        <p>가격 : 25,000원</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/prod2.jpg">
+                    <div class="caption">
+                        <h1>상품 2</h1>
+                        <p>상품 2 설명 텍스트</p>
+                        <p>가격 : 35,000원</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/prod3.jpg">
+                    <div class="caption">
+                        <h1>상품 3</h1>
+                        <p>상품 3 설명 텍스트</p>
+                        <p>가격 : 15,000원</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

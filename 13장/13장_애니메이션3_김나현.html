@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>애니메이션 3 - 김나현</title>
+
+        <style>
+            #box1 {
+                height: 60px; /* 세로 */
+                margin-top: 50px;
+                margin-left: 100px; /*  바깥 */
+                padding: 20px; /* 안 쪽 */
+                animation-name: moving; /* 이름 */
+                animation-duration: 3s; /* 시간 */
+                animation-direction: normal; /* 애니메이션 방향 지정 */
+                animation-iteration-count: infinite; /* 애니메이션 반복 횟수 - 무한 */
+            }
+            
+            @keyframes moving {
+                from {
+                    width: 200px;
+                    background-color: rgb(255, 244, 180);
+                    transform: scale(0.5) rotate(15deg);
+                    opacity: 0.5; /* 투명도 */
+                    
+                }
+
+                to {
+                    width: 400px;
+                    background-color: gold;
+                    transform: scale(1) rotate(0deg);
+                    opacity: 1;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box1">
+            <h3>CSS3 Aniamtiom</h3>
+        </div>
+    </body>
+</html>
