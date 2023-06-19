@@ -3,14 +3,15 @@ body {
 }
 
 nav li {
-    display: inline; /* 가로로 배치 */
-    float: right; /* 오른쪽 정렬 */
+    display: inline;
+    float: left; /* 다음으로 li 태그에 왼쪽 정렬을 하면 네비게이션 메뉴 태그를 오른쪽 정렬을 할 때 순서가 뒤 바뀌지 않는다 */
     padding-top: 20px; /* 안 쪽 여백 위 */
     margin: 15px; /* 글자 간의 간격 */
 }
 
 nav ul {
     list-style: none; /* 불릿 없애기 */
+    float: right; /* ul 태그에 오른쪽 정렬은 먼저 하고 */
 }
 
 nav a {
@@ -90,4 +91,8 @@ footer p {
     font-size: 15px; /* 글자 사이즈 */
     line-height: 30px; /* 라인 하이트 */
     margin: 20px; /* 바깥쪽 여백 */
+}
+
+a {
+    text-decoration: none; /* 하이퍼링크 밑 줄 없애기 */
 }

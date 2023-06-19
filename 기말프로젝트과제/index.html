@@ -42,11 +42,15 @@
             li img {
                 width: 150px; /* 가로 넓이 */
                 height: 100px; /* 세로 넓이 */
-                float: left; /* 왼쪽 정렬 */
-                margin-left: auto; /* 가운데 정렬 */
-                margin-right: auto; /* 가운데 정렬 */
-                margin: 5px; /* 바깥 여백 */
+                display: inline-block; /* 디스프레이 인라인 블럭 요소 */
+                margin: 5px; /* 바깥 쪽 여백 */
+            }
 
+            div {
+                display: block; /* 디스플레이 블럭요소 */
+                margin-left: auto; /* 영역 가운데 */
+                margin-right: auto; /* 영역 가운데 */
+                text-align: center; /* 텍스트 가운데 > 이미지 가운데 적용이 가능하다 */
             }
         </style>
 
@@ -76,43 +80,38 @@
                 <source src="media/look.mp4" type="video/mp4">
             </video>
         </article>
-        <br>
+        <br><br>
         <aside>
             <ul>
                 <li>
-                    <a href="https://www.nintendo.co.kr/zelda/totk/" target="_blank">
-                        <img src="img/game1.png">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://pokemonkorea.co.kr/sv" target="_blank">
-                        <img src="img/game2.png">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://pokemonkorea.co.kr/legends_arceus" target="_blank">
-                        <img src="img/game3.png">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.nintendo.co.kr/switch/acbaa/" target="_blank">
-                        <img src="img/game4.png">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.nintendo.co.kr/switch/av5ja/" target="_blank">
-                        <img src="img/game5.png">
-                    </a>
+                    <div class="box5">
+                        <a href="https://www.nintendo.co.kr/zelda/totk/" target="_blank">
+                            <img src="img/game1.png">
+                        </a>
+                        <a href="https://pokemonkorea.co.kr/sv" target="_blank">
+                            <img src="img/game2.png">
+                        </a>
+                        <a href="https://pokemonkorea.co.kr/legends_arceus" target="_blank">
+                            <img src="img/game3.png">
+                        </a>
+                        <a href="https://www.nintendo.co.kr/switch/acbaa/" target="_blank">
+                            <img src="img/game4.png">
+                        </a>
+                        <a href="https://www.nintendo.co.kr/switch/av5ja/" target="_blank">
+                            <img src="img/game5.png">
+                        </a>
+                    </div>
                 </li>
             </ul>
         </aside>
-        <br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br>
         <hr>
         <footer>
             <p>
                 한국닌텐도 공식 홈페이지
                 한국닌텐도 공식 채널
                 Super Mario Galaxy ost Gusty Garden Galaxy
+                컴퓨터공학부 202395004 김나현
             </p>
         </footer>
     </body>
