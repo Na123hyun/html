@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>닌텐도 사이트 - 김나현</title>
+
+        <link rel="stylesheet" type="text/css" href="202395004.css">
+
+        <style>
+            .nint {
+                width: 100px; /* 가로 */
+                height: 100px; /* 세로 */
+                margin-right: auto; /* 영역 가운데 정렬 */
+                margin-left: auto; /* 영역 가운데 정렬*/
+                animation-name: logo; /* 이름 */
+                animation-duration: 1s; /* 시간 */
+                animation-direction: normal; /* 애니메이션 방향 지정 */
+                animation-iteration-count: infinite; /* 애니메이션 반복 횟수 - 무한 */
+            }
+
+            @keyframes logo {
+                from { /* 시작 */
+                    transform: rotate(10deg); /* 회전 */
+                }
+                
+                50% { /* 중간 */
+                    transform: rotate(-10deg); /* 회전 */
+                }
+
+                to { /* 끝 */
+                    transform: rotate(10deg); /* 회전 */
+                }
+            }
+
+            li img {
+                float: left;
+                width: 300px; /* 가로 */
+                margin-left: auto; /* 영역 가운데 정렬 */
+                margin-right: auto; /* 영역 가운데 정렬 */
+                margin: 50px; /* 바깥 쪽 여백 */
+                display: inline; /* 디스 플레이 인라인 블럭 요쇼 */
+                animation-name: site; /* 이름 */
+                animation-duration: 1s; /* 시간 */
+                animation-direction: normal; /* 애니메이션 방향 지정 */
+            }
+
+            @keyframes site {
+                from { /* 시작 */
+                    transform: rotate(720deg); /* 회전 */
+                }
+            }
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <br><br>
+            <div class="nint">
+                <a href="index.html"><img src="img/nintendo.png"></a>
+            </div>
+
+            <br><br>
+
+            <nav>
+                <ul>
+                    <li><a href="information.html">닌텐도 정보</a></li>
+                    <li><a href="switch.html">닌텐도 스위치</a></li>
+                    <li><a href="introduction.html">닌텐도 게임 소개</a></li>
+                    <li><a href="site.html">닌텐도 사이트</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <br><br><br><br><br><br>
+
+        <section>
+            <h1>닌텐도 사이트</h1>
+            <br><br><br><br><br>
+            <article>
+                <div id="box3">
+                    <ul>
+                        <li>
+                            <a href="https://www.nintendo.co.kr/" target="_blank">
+                                <img src="img/site1.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.nintendo.co.kr/support/switch/eshop/" target="_blank">
+                                <img src="img/site2.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://store.nintendo.co.kr/" target="_blank">
+                                <img src="img/site3.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/@Nintendo_KR" target="_blank">
+                                <img src="img/site4.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <hr>
+        <footer>
+            <p>
+                한국닌텐도 공식 홈페이지
+                한국닌텐도 공식 채널
+                컴퓨터공학부 202395004 김나현
+            </p>
+        </footer>
+    </body>
+</html>
